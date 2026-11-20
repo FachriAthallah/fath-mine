@@ -1,0 +1,28 @@
+info:
+  name: Ubah Informasi
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: http://localhost/fath-mine/project-2/informasi.php?id=7
+  params:
+    - name: id
+      value: "7"
+      type: query
+  body:
+    type: json
+    data: |-
+      {
+        "judul": "Program Beasiswa Fath Mine 2026",
+        "ringkasan": "Beasiswa untuk pelajar di sekitar wilayah operasi.",
+        "isi": "Fath Mine membuka program beasiswa bagi pelajar berprestasi yang tinggal di sekitar wilayah operasi. Pendaftaran dibuka setiap awal tahun ajaran."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

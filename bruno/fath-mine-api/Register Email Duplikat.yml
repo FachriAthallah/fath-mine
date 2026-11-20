@@ -1,0 +1,23 @@
+info:
+  name: Register Email Duplikat
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: http://localhost/fath-mine/project-2/login.php
+  body:
+    type: json
+    data: |-
+      {
+        "email": "admin@fathmine.test",
+        "password": "admin123"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

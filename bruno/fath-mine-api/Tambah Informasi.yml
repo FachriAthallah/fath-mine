@@ -1,0 +1,24 @@
+info:
+  name: Tambah Informasi
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost/fath-mine/project-2/informasi.php
+  body:
+    type: json
+    data: |-
+      {
+        "judul": "Program Beasiswa Fath Mine",
+        "ringkasan": "Beasiswa untuk anak-anak di sekitar wilayah operasi.",
+        "isi": "Fath Mine membuka program beasiswa bagi pelajar berprestasi yang tinggal di sekitar wilayah operasi, sebagai bentuk kepedulian pada masyarakat."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

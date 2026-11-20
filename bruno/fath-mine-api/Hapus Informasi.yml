@@ -1,0 +1,20 @@
+info:
+  name: Hapus Informasi
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: http://localhost/fath-mine/project-2/informasi.php?id=7
+  params:
+    - name: id
+      value: "7"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
