@@ -24,3 +24,8 @@ function ambilLogin() {
 function hapusLogin() {
   sessionStorage.removeItem("userFathMine");
 }
+function escapeHtml(teks) {
+  const el = document.createElement("div");
+  el.textContent = teks;
+  return el.innerHTML;
+}
