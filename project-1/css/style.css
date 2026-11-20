@@ -1,0 +1,75 @@
+:root {
+  --emas: #c9a227;
+  --emas-tua: #a8861c;
+  --nikel: #7f8c99;
+  --gelap: #1d2226;
+  --terang: #f4f1ea;
+}
+
+body {
+  background: var(--terang);
+  color: #222;
+}
+
+.navbar-fm {
+  background: var(--gelap);
+}
+
+.navbar-fm .navbar-brand {
+  color: var(--emas);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.navbar-fm .nav-link {
+  color: #d8dde2;
+}
+
+.navbar-fm .nav-link:hover {
+  color: var(--emas);
+}
+
+.btn-emas {
+  background: var(--emas);
+  border-color: var(--emas);
+  color: var(--gelap);
+  font-weight: 600;
+}
+
+.btn-emas:hover {
+  background: var(--emas-tua);
+  border-color: var(--emas-tua);
+  color: #fff;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1d2226, #3a444d);
+  color: #fff;
+  padding: 5rem 0;
+}
+
+.hero h1 {
+  color: var(--emas);
+  font-weight: 700;
+}
+
+.kartu-info {
+  border: 0;
+  border-top: 4px solid var(--emas);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.kartu-info:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+.footer-fm {
+  background: var(--gelap);
+  color: #aab2ba;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
