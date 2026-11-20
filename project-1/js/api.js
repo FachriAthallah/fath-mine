@@ -1,4 +1,4 @@
-const API_URL = "http://localhost/fath-mine/project-2";
+const API_URL = "../project-2";
 
 async function panggilApi(endpoint, metode = "GET", data = null) {
   const opsi = { method: metode };
