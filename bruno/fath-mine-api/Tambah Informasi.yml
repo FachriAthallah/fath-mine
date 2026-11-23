@@ -11,8 +11,9 @@ http:
     data: |-
       {
         "judul": "Program Beasiswa Fath Mine",
-        "ringkasan": "Beasiswa untuk anak-anak di sekitar wilayah operasi.",
-        "isi": "Fath Mine membuka program beasiswa bagi pelajar berprestasi yang tinggal di sekitar wilayah operasi, sebagai bentuk kepedulian pada masyarakat."
+        "ringkasan": "Beasiswa untuk pelajar di sekitar wilayah operasi.",
+        "isi": "Fath Mine membuka program beasiswa bagi pelajar berprestasi yang tinggal di sekitar wilayah operasi, sebagai bentuk kepedulian pada masyarakat sekitar tambang.",
+        "gambar": "tentang-fath-mine.jpg"
       }
   auth: inherit
 

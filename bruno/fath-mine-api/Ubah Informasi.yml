@@ -16,7 +16,8 @@ http:
       {
         "judul": "Program Beasiswa Fath Mine 2026",
         "ringkasan": "Beasiswa untuk pelajar di sekitar wilayah operasi.",
-        "isi": "Fath Mine membuka program beasiswa bagi pelajar berprestasi yang tinggal di sekitar wilayah operasi. Pendaftaran dibuka setiap awal tahun ajaran."
+        "isi": "Fath Mine membuka program beasiswa bagi pelajar berprestasi yang tinggal di sekitar wilayah operasi. Pendaftaran dibuka setiap awal tahun ajaran.",
+        "gambar": "visi-dan-misi.jpg"
       }
   auth: inherit
 
