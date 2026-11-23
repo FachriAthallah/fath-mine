@@ -43,10 +43,10 @@
             <li class="nav-item">
               <a class="nav-link" href="#informasi">Informasi</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="navLogin">
               <a class="nav-link" href="login.html">Login</a>
             </li>
-            <li class="nav-item ms-lg-2">
+            <li class="nav-item ms-lg-2" id="navRegistrasi">
               <a class="btn btn-aksen btn-sm" href="register.html"
                 >Registrasi</a
               >
@@ -64,10 +64,12 @@
           Menambang dengan aman, bekerja dengan jujur, dan menjaga lingkungan
           tetap lestari.
         </p>
-        <a href="login.html" class="btn btn-aksen btn-lg me-2 mb-2">Login</a>
-        <a href="register.html" class="btn btn-garis-terang btn-lg mb-2"
-          >Registrasi</a
-        >
+        <div id="aksiHero">
+          <a href="login.html" class="btn btn-aksen btn-lg me-2 mb-2">Login</a>
+          <a href="register.html" class="btn btn-garis-terang btn-lg mb-2"
+            >Registrasi</a
+          >
+        </div>
       </div>
     </header>
 
@@ -166,6 +168,7 @@
       }
 
       muatInformasi();
+      sesuaikanTampilanLogin();
     </script>
   </body>
 </html>

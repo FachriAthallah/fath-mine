@@ -157,6 +157,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/api.js"></script>
     <script>
+      if (ambilLogin()) {
+        window.location.href = "menu.html";
+      }
       function tampilkanPesan(jenis, teks) {
         document.getElementById("pesan").innerHTML =
           `<div class="alert alert-${jenis}">${escapeHtml(teks)}</div>`;

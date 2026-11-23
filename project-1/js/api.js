@@ -41,3 +41,33 @@ function pasangTombolLihat(idInput, idTombol) {
       : '<i class="bi bi-eye"></i>';
   });
 }
+function sesuaikanTampilanLogin() {
+  const user = ambilLogin();
+  if (!user) {
+    return;
+  }
+
+  const navLogin = document.getElementById("navLogin");
+  const navRegistrasi = document.getElementById("navRegistrasi");
+  const aksiHero = document.getElementById("aksiHero");
+
+  if (navLogin) {
+    navLogin.innerHTML = '<a class="nav-link" href="menu.html">Menu Utama</a>';
+  }
+
+  if (navRegistrasi) {
+    navRegistrasi.innerHTML =
+      '<button type="button" class="btn btn-aksen btn-sm" id="btnLogoutNav">Logout</button>';
+    document
+      .getElementById("btnLogoutNav")
+      .addEventListener("click", function () {
+        hapusLogin();
+        window.location.href = "login.html";
+      });
+  }
+
+  if (aksiHero) {
+    aksiHero.innerHTML =
+      '<a href="menu.html" class="btn btn-aksen btn-lg mb-2">Buka Menu Utama</a>';
+  }
+}
