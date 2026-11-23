@@ -27,5 +27,5 @@ function hapusLogin() {
 function escapeHtml(teks) {
   const el = document.createElement("div");
   el.textContent = teks;
-  return el.innerHTML;
+  return el.innerHTML.replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
