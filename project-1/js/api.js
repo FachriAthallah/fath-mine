@@ -29,3 +29,15 @@ function escapeHtml(teks) {
   el.textContent = teks;
   return el.innerHTML.replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
+function pasangTombolLihat(idInput, idTombol) {
+  const input = document.getElementById(idInput);
+  const tombol = document.getElementById(idTombol);
+
+  tombol.addEventListener("click", function () {
+    const tersembunyi = input.type === "password";
+    input.type = tersembunyi ? "text" : "password";
+    tombol.innerHTML = tersembunyi
+      ? '<i class="bi bi-eye-slash"></i>'
+      : '<i class="bi bi-eye"></i>';
+  });
+}
