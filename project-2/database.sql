@@ -12,6 +12,7 @@ CREATE TABLE informasi (
   judul VARCHAR(150) NOT NULL,
   ringkasan VARCHAR(255) NOT NULL,
   isi TEXT NOT NULL,
+  gambar VARCHAR(255) DEFAULT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -23,36 +24,42 @@ CREATE TABLE users (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-INSERT INTO informasi (judul, ringkasan, isi) VALUES
+INSERT INTO informasi (judul, ringkasan, isi, gambar) VALUES
 (
   'Tentang Fath Mine',
-  'Perusahaan tambang emas dan nikel yang mengutamakan keselamatan dan keberlanjutan.',
-  'Fath Mine adalah perusahaan pertambangan fiktif yang bergerak di bidang emas dan nikel. Berdiri dengan semangat menambang secara bertanggung jawab, Fath Mine mengelola dua wilayah operasi dengan tenaga kerja yang terlatih dan peralatan yang terus diperbarui. Kami percaya bahwa hasil tambang yang baik harus sejalan dengan keselamatan pekerja dan kelestarian lingkungan sekitar.'
+  'Perusahaan pertambangan emas dan nikel yang mengutamakan keselamatan dan tanggung jawab pada lingkungan.',
+  'Fath Mine adalah perusahaan pertambangan yang bergerak di komoditas emas dan nikel. Kami bekerja dengan satu prinsip sederhana: hasil tambang yang baik harus diperoleh dengan cara yang aman bagi pekerja dan bertanggung jawab pada lingkungan sekitar.\n\nDi lapangan, kegiatan kami mencakup eksplorasi, penambangan, hingga pengolahan awal bijih. Setiap tahap dijalankan oleh tim yang terlatih, dengan prosedur kerja yang jelas dan peralatan yang rutin diperiksa.\n\nSelain mengejar hasil produksi, kami ingin kehadiran tambang ini ikut memberi manfaat bagi masyarakat di sekitarnya, mulai dari membuka kesempatan kerja hingga mendukung program pendidikan dan pelatihan.',
+  'tentang-fath-mine.jpg'
 ),
 (
   'Visi dan Misi',
-  'Menjadi perusahaan tambang yang unggul, aman, dan berkelanjutan.',
-  'Visi kami adalah menjadi perusahaan tambang yang unggul dan dipercaya, dengan tata kelola yang aman dan berkelanjutan. Untuk mewujudkannya, misi kami meliputi: menjalankan operasi tambang yang efisien, menjaga keselamatan setiap pekerja, memberi manfaat nyata bagi masyarakat sekitar, serta memulihkan lahan bekas tambang secara bertahap.'
+  'Arah dan nilai yang kami pegang dalam menjalankan kegiatan pertambangan.',
+  'Visi\nMenjadi perusahaan pertambangan yang dipercaya karena bekerja dengan aman, efisien, dan berkelanjutan.\n\nMisi\n1. Menjalankan kegiatan tambang yang efisien dan sesuai peraturan yang berlaku.\n2. Menempatkan keselamatan dan kesehatan seluruh pekerja sebagai prioritas utama.\n3. Mengelola dampak lingkungan dan memulihkan lahan bekas tambang secara bertahap.\n4. Memberi manfaat nyata bagi masyarakat di sekitar wilayah operasi.\n5. Mengembangkan kemampuan dan karier para pekerja secara berkelanjutan.',
+  'visi-dan-misi.jpg'
 ),
 (
   'Tambang Emas',
-  'Penambangan dan pengolahan emas di Blok Aurum.',
-  'Tambang emas Fath Mine berada di Blok Aurum, sebuah wilayah operasi fiktif di pegunungan. Bijih emas digali, dihancurkan, lalu diolah melalui tahap pemisahan untuk menghasilkan emas dengan kemurnian tinggi. Seluruh proses diawasi ketat agar air limbah tetap aman sebelum kembali ke lingkungan.'
+  'Dari eksplorasi hingga pengolahan, emas dihasilkan lewat tahapan yang dikontrol ketat.',
+  'Emas adalah logam mulia yang dimanfaatkan untuk perhiasan, investasi, dan juga industri elektronik. Karena jumlahnya di dalam batuan biasanya sangat kecil, penambangannya membutuhkan perencanaan yang matang.\n\nProsesnya dimulai dari eksplorasi untuk memastikan letak dan kadar bijih. Setelah itu bijih digali, diangkut, lalu dihancurkan menjadi ukuran yang lebih halus agar emasnya mudah dipisahkan. Tahap pengolahan kemudian memisahkan emas dari material lain sebelum dimurnikan.\n\nDi setiap tahap, kami memantau pengelolaan air dan limbah agar tidak mencemari lingkungan sekitar tambang.',
+  'tambang-emas.jpg'
 ),
 (
   'Tambang Nikel',
-  'Penambangan nikel untuk kebutuhan baja tahan karat dan baterai.',
-  'Tambang nikel Fath Mine berada di Blok Ferron, wilayah operasi fiktif di kawasan pesisir. Nikel dari wilayah ini dibutuhkan untuk membuat baja tahan karat dan menjadi bahan penting baterai kendaraan listrik. Bijih nikel ditambang secara terbuka, lalu dikirim ke fasilitas pengolahan untuk dijadikan produk setengah jadi.'
+  'Nikel untuk kebutuhan baja tahan karat dan baterai kendaraan listrik.',
+  'Nikel adalah logam yang banyak dipakai untuk membuat baja tahan karat. Dalam beberapa tahun terakhir, kebutuhannya juga meningkat karena nikel menjadi salah satu bahan penting baterai kendaraan listrik.\n\nDi Indonesia, nikel umumnya ditemukan pada endapan laterit yang letaknya dekat permukaan tanah, sehingga banyak ditambang dengan sistem tambang terbuka. Tanah penutup dikupas, bijih diambil, lalu dipilah berdasarkan kadarnya sebelum dikirim ke fasilitas pengolahan.\n\nKarena penambangan terbuka mengubah bentang lahan, rencana reklamasi perlu disiapkan sejak awal agar lahan dapat dipulihkan setelah penambangan selesai.',
+  'tambang-nikel.jpg'
 ),
 (
   'Wilayah Operasi',
-  'Dua wilayah operasi: Blok Aurum untuk emas dan Blok Ferron untuk nikel.',
-  'Fath Mine mengoperasikan dua wilayah fiktif. Blok Aurum berada di dataran tinggi dan berfokus pada emas, sedangkan Blok Ferron berada di daerah pesisir dan berfokus pada nikel. Setiap blok memiliki kantor lapangan, pos kesehatan, dan jalur logistik masing-masing untuk mendukung kegiatan harian.'
+  'Area kegiatan tambang emas dan nikel beserta fasilitas pendukungnya.',
+  'Kegiatan Fath Mine berlangsung di dua area kerja, yaitu area tambang emas dan area tambang nikel. Keduanya memiliki karakter lahan dan kebutuhan yang berbeda, sehingga dikelola dengan pendekatan masing-masing.\n\nSetiap area didukung fasilitas dasar agar kegiatan berjalan lancar, seperti kantor lapangan, jalan tambang dan jalur angkut, bengkel peralatan, serta pos kesehatan untuk kebutuhan medis pekerja.\n\nBatas wilayah kerja, jalur kendaraan, dan area berbahaya ditandai dengan jelas. Hanya orang yang berkepentingan dan sudah mendapat pengarahan keselamatan yang boleh memasukinya.',
+  'wilayah-operasi.jpg'
 ),
 (
   'Keselamatan Kerja dan Lingkungan',
-  'Komitmen pada K3, reklamasi lahan, dan program untuk masyarakat sekitar.',
-  'Keselamatan adalah prioritas utama. Setiap pekerja wajib memakai alat pelindung diri dan mengikuti pelatihan keselamatan sebelum masuk area tambang. Untuk lingkungan, Fath Mine melakukan reklamasi pada lahan yang sudah selesai ditambang dan memantau kualitas air secara berkala. Kami juga menjalankan program pemberdayaan bagi warga sekitar, seperti pelatihan kerja dan dukungan pendidikan.'
+  'Komitmen menjaga keselamatan pekerja dan memulihkan lingkungan di sekitar tambang.',
+  'Pertambangan adalah pekerjaan yang berisiko, jadi keselamatan tidak boleh dianggap urusan belakangan. Setiap pekerja wajib mengikuti pengarahan keselamatan sebelum bekerja, memakai alat pelindung diri seperti helm, sepatu pengaman, rompi, dan kacamata, serta mengikuti prosedur kerja yang berlaku.\n\nKami juga membiasakan pelaporan kejadian hampir celaka (near miss), supaya potensi bahaya bisa diperbaiki sebelum menimbulkan korban.\n\nUntuk lingkungan, kegiatan tambang diikuti dengan pemantauan kualitas air dan udara, pengelolaan limbah, serta reklamasi lahan yang sudah selesai ditambang. Di luar itu, kami menjalankan program bagi masyarakat sekitar, misalnya pelatihan kerja dan dukungan pendidikan.',
+  'k3.jpg'
 );
 
 INSERT INTO users (nama, email, password) VALUES
