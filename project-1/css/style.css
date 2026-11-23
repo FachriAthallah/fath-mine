@@ -1,4 +1,3 @@
-/* ===== Warna dan dasar ===== */
 :root {
   --latar: #e3fdfd;
   --kartu: #cbf1f5;
@@ -42,7 +41,6 @@ h5 {
   scroll-margin-top: 5rem;
 }
 
-/* ===== Navbar ===== */
 .navbar-fm {
   background: rgba(227, 253, 253, 0.92);
   backdrop-filter: blur(8px);
@@ -75,7 +73,6 @@ h5 {
   color: var(--teks);
 }
 
-/* ===== Tombol ===== */
 .btn-aksen {
   background: var(--aksen);
   border: 2px solid var(--aksen);
@@ -104,7 +101,6 @@ h5 {
   color: var(--teks);
 }
 
-/* ===== Hero beranda ===== */
 .hero-beranda {
   position: relative;
   min-height: 82vh;
@@ -156,7 +152,6 @@ h5 {
   color: rgba(255, 255, 255, 0.92);
 }
 
-/* ===== Strip tiga pilar ===== */
 .pilar-strip {
   position: relative;
   z-index: 2;
@@ -198,7 +193,6 @@ h5 {
   color: var(--teks-lembut);
 }
 
-/* ===== Judul bagian ===== */
 .garis-aksen {
   width: 4rem;
   height: 0.3rem;
@@ -212,7 +206,6 @@ h5 {
   color: var(--teks-lembut);
 }
 
-/* ===== Kartu foto (foto + gradasi + teks di bawah) ===== */
 .kartu-foto {
   position: relative;
   display: block;
@@ -289,7 +282,6 @@ h5 {
   color: var(--aksen);
 }
 
-/* ===== Footer ===== */
 .footer-fm {
   background: var(--teks);
   color: #cfe7e9;
@@ -305,7 +297,6 @@ h5 {
   }
 }
 
-/* ===== Kompatibilitas sementara untuk halaman lama (hapus di akhir) ===== */
 .btn-emas {
   background: var(--aksen);
   border-color: var(--aksen);
@@ -332,7 +323,7 @@ h5 {
 .hero h1 {
   color: #fff;
 }
-/* ===== Halaman detail ===== */
+
 .btn-kembali {
   background: transparent;
   border: 2px solid var(--aksen);
@@ -443,7 +434,7 @@ h5 {
   font-weight: 600;
   line-height: 1.3;
 }
-/* ===== Halaman login dan registrasi ===== */
+
 .auth-kartu {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -550,4 +541,63 @@ h5 {
   .auth-foto {
     min-height: 190px;
   }
+}
+
+.banner-detail.pendek {
+  height: clamp(220px, 34vh, 320px);
+}
+
+.menu-kartu {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid var(--garis);
+  border-radius: 1.25rem;
+  box-shadow: 0 0.5rem 1.25rem rgba(31, 63, 68, 0.08);
+  color: var(--teks);
+  font: inherit;
+  text-align: left;
+  text-decoration: none;
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
+}
+
+a.menu-kartu,
+button.menu-kartu {
+  cursor: pointer;
+}
+
+a.menu-kartu:hover,
+button.menu-kartu:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(31, 63, 68, 0.18);
+  color: var(--teks);
+}
+
+.menu-ikon {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-radius: 0.75rem;
+  background: var(--aksen);
+  color: var(--teks);
+}
+
+.menu-kartu h5 {
+  margin-bottom: 0.5rem;
+}
+
+.menu-kartu p {
+  color: var(--teks-lembut);
+}
+
+.menu-kartu .tautan-kartu {
+  font-weight: 600;
+  color: #2b7a80;
 }
